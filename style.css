@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0px;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+input[type="range"] {
+  accent-color: #ce036a;
+}
+
+.music-player {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  column-gap: 20px;
+  height: max-content;
+}
+
+.left-section {
+  background-color: #f3f3f3;
+  border-radius: 21px;
+  flex-grow: 1;
+  padding: 40px 30px 40px 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.wsa-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* //song list */
+.item-container {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  padding: 6px;
+}
+
+.item-img {
+  flex-grow: 0;
+}
+
+.track-data-container {
+  flex-grow: 1;
+}
+
+.track-title {
+  color: #333333;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.47px;
+}
+
+.track-artist {
+  color: #4f4f4f;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13.26px;
+}
+
+.track-duration {
+  color: #333333;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.47px;
+}
+.track-year {
+  color: #4f4f4f;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13.26px;
+}
+.player-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 21px;
+  box-sizing: border-box;
+}
+.thumbnail-container {
+  padding: 100px;
+  border-radius: 21px;
+
+  background: linear-gradient(0deg, #d9d9d9 0%, #d9d9d9 100%), #fff;
+}
+
+.track-details {
+  margin-top: 30px;
+  text-align: center;
+  row-gap: 5px;
+}
+
+#player-title,
+#player-description {
+  color: #333333;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110.5%;
+}
+#player-description {
+  color: #4f4f4f;
+  font-weight: 400;
+}
+
+#thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.track-progress {
+  width: 397px;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+#progress {
+  position: absolute;
+  top: 16px;
+}
+
+.time {
+  color: #828282;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 110.5%;
+}
+
+#time-left {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.control-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  background-color: #ce036a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#play-pause {
+  margin: 0 50px;
+}
+
+.volume-container {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.volume-range {
+  width: 310px !important;
+}
+
+.current-song {
+  color: #ce036a;
+}

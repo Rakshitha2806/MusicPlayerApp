@@ -1,0 +1,5 @@
+step 1: DOM Content
+store all song information
+remember which song is selected
+create an Audio player
+get all required HTML elements

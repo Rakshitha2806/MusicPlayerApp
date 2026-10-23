@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Controller -->
+     <div class="music-player">
+        <!-- left section: logo, Track list -->
+         <section class="left-section">
+
+            <!-- logo -->
+             <div class="wsa-logo-container">
+                <img src="./assets/logo/wsa-logo.svg" alt="WSA Logo"/>
+             </div>
+
+             <!-- Song list container -->
+              <div class="song-list-container">
+                <h2>Track List</h2>
+
+                <div id="song-List">
+                    <!-- we will add all the songs dynamically -->
+                </div>
+
+              </div>
+
+         </section>
+
+         <!-- right section: thumbnail, controls -->
+          <section class="player-container">
+
+            <!-- thumbnail container -->
+             <div class="thumbnail-container">
+                <img src="./assets/icons/music-icon.svg" alt="thumbnail" id="thumbnail"/>
+             </div>
+
+             <!-- track details -->
+              <div class="track-details">
+                <p id="player-title">Player Title</p>
+                <p id="player-description">Player Description</p>
+              </div>
+
+              <!-- controls -->
+               <div class="controls">
+                <!-- track progress -->
+                 <div class="track-progress">
+                    <input type="range" id="progress" min="0" max="100" value="0" step="1"/>
+                    <div class="time" id="current-time">ct</div>
+                    <div class="time" id="time-left">tf</div>
+                 </div>
+
+                 <!-- 3 buttons: restart, play-pause, stop -->
+                  <div class="btn-group">
+
+                    <button class="control-btn" id="restart">
+                        <img src="./assets/icons/arrow-repeat.svg"/>
+                    </button>
+                    <button id="play-pause">
+                        <img src="./assets/icons/pause.svg"/>
+                    </button>
+                    <button class="control-btn" id="stop">
+                        <img src="./assets/icons/stop.svg"/>
+                    </button>
+                  </div>
+
+                  <!-- volume container -->
+                   <div class="volume-container">
+                    <img src="./assets/icons/volume-low.svg"/>
+                    <input type="range" id="volume" min="0" max="1" value="1" step="0.1" />
+                    <img src="./assets/icons/volume-high.svg"/>
+                   </div>
+
+
+               </div>
+            
+          </section>
+
+     </div>
+
+     <script src="script.js"></script>
+     
+</body>
+</html>
